@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.chuqin.utils.tools.restfulapidemo.domain.Org;
@@ -13,6 +14,7 @@ import top.chuqin.utils.tools.restfulapidemo.service.OrgService;
 import javax.validation.constraints.NotNull;
 
 
+@Validated
 @RestController
 @RequestMapping(value = "/orgs")
 public class OrgController {

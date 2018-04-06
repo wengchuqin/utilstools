@@ -18,6 +18,14 @@ public class SuccessDto {
         this.data = data;
     }
 
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
