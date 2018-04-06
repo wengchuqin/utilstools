@@ -6,7 +6,11 @@
 
     <groupId>top.chuqin.utils.tools</groupId>
     <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>restfulapidemo</module>
+    </modules>
 
     <dependencies>
         <dependency>
