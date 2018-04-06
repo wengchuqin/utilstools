@@ -8,8 +8,17 @@
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
-        <module>restfulapidemo</module>
+        <module>freemarker</module>
+        <module>guava</module>
+        <module>reflectionjoor</module>
+        <module>restful-api-demo</module>
+        <module>rmi</module>
+        <module>strman</module>
+        <module>swagger2</module>
+        <module>thrift</module>
+        <module>thriftannotation</module>
     </modules>
 
     <dependencies>
@@ -19,4 +28,17 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
