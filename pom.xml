@@ -19,6 +19,7 @@
         <module>swagger2</module>
         <module>thrift</module>
         <module>thriftannotation</module>
+        <module>lambda</module>
     </modules>
 
     <dependencies>
