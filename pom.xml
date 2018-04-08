@@ -20,6 +20,7 @@
         <module>thrift</module>
         <module>thriftannotation</module>
         <module>lambda</module>
+        <module>berkeley</module>
     </modules>
 
     <dependencies>
