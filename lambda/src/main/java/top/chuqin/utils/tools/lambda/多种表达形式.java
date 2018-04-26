@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.awt.event.ActionListener;
 import java.util.function.BinaryOperator;
+import java.util.stream.Stream;
 
 public class 多种表达形式 {
     @Test
@@ -20,5 +21,8 @@ public class 多种表达形式 {
         BinaryOperator<Long> add = (x, y) -> x + y;
 
         BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
+
+
+
     }
 }
