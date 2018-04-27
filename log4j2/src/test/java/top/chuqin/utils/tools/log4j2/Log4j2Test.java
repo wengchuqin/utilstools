@@ -11,7 +11,15 @@ public class Log4j2Test {
     @Test
     public void test(){
         while (true){
-            logger.debug("hello");
+            logger.info("hello");
         }
+    }
+
+    @Test
+    public void test2(){
+        logger.debug("debug");
+        logger.info("info");
+        logger.warn("warn");
+        logger.error("error");
     }
 }
