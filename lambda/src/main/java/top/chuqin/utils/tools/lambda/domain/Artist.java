@@ -11,6 +11,10 @@ public class Artist {
     }
 
 
+    public Integer count(){
+        return 5;
+    }
+
     public Boolean isFrom(String local){
         return Objects.equals(local, origin);
     }
