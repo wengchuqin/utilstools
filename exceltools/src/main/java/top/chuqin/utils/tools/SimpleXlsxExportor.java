@@ -3,11 +3,13 @@ package top.chuqin.utils.tools;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.joor.Reflect;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class SimpleXlsxExportor {
 
@@ -30,9 +32,28 @@ public class SimpleXlsxExportor {
         //设置头部
         strDatas.add(getHeadStrList(columnsConfig));
         //设置数据
-
+        for (Object object : dataList) {
+            strDatas.add(getObjectData(object, columnsConfig));
+        }
 
         return strDatas;
+    }
+
+    private List<String> getObjectData(Object object, ColumnsConfig columnsConfig) {
+        List<String> data = new ArrayList<>();
+        for (int i = 0; i <= columnsConfig.getConfigItems().last().sequence; i++) {
+            data.add("");
+        }
+
+        for (ConfigItem item : columnsConfig.getConfigItems()) {
+            System.out.println(item.field);
+
+
+            String value = Objects.toString(Reflect.on(object).get(item.field));
+            data.set(item.sequence, value);
+        }
+
+        return data;
     }
 
     private List<String> getHeadStrList(ColumnsConfig columnsConfig) {

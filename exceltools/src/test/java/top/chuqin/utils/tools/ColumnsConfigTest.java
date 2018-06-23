@@ -24,10 +24,7 @@ public class ColumnsConfigTest {
     }
 
 
-    @Test
-    public void name() {
-        throw new ColumnSequenceDuplicateException(12);
-    }
+
 
 
     @Test
