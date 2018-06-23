@@ -29,7 +29,7 @@ public class GlobalExceptionHandle {
     private static Logger LOG = LoggerFactory.getLogger(GlobalExceptionHandle.class);
 
     @ExceptionHandler(BusinessException.class)
-    public void businessException(HttpServletRequest request, HttpServletResponse response, BusinessException e){
+    public void businessException(HttpServletRequest request, HttpServletResponse response, BusinessException e) {
         long code = longUuidService.genUuid();
         LOG.trace("exception({}), {}", code, e.getStackTrace());
 
@@ -41,7 +41,7 @@ public class GlobalExceptionHandle {
     }
 
     @ExceptionHandler(DuplicateOrgNameException.class)
-    public void duplicateOrgNameException(HttpServletRequest request, HttpServletResponse response, DuplicateOrgNameException e){
+    public void duplicateOrgNameException(HttpServletRequest request, HttpServletResponse response, DuplicateOrgNameException e) {
         long code = longUuidService.genUuid();
         LOG.trace("exception({}), {}", code, e.getStackTrace());
 
@@ -52,7 +52,7 @@ public class GlobalExceptionHandle {
     }
 
 
-    private void writeJsonToResponse(FailDto failDto, HttpServletResponse response){
+    private void writeJsonToResponse(FailDto failDto, HttpServletResponse response) {
         response.setContentType("application/json;charset=UTF-8");
         try {
             String json = JSON.toJSONString(failDto);

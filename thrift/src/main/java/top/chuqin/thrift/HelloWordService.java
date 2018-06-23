@@ -265,7 +265,9 @@ public class HelloWordService {
 
         public Request request; // required
 
-        /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
+        /**
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
+         */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             REQUEST((short) 1, "request");
 
@@ -375,7 +377,9 @@ public class HelloWordService {
             this.request = null;
         }
 
-        /** Returns true if field request is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field request is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetRequest() {
             return this.request != null;
         }
@@ -408,7 +412,9 @@ public class HelloWordService {
             throw new java.lang.IllegalStateException();
         }
 
-        /** Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
+         */
         public boolean isSet(_Fields field) {
             if (field == null) {
                 throw new java.lang.IllegalArgumentException();
@@ -634,7 +640,9 @@ public class HelloWordService {
         public java.lang.String success; // required
         public RequestException qe; // required
 
-        /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
+        /**
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
+         */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             SUCCESS((short) 0, "success"),
             QE((short) 1, "qe");
@@ -755,7 +763,9 @@ public class HelloWordService {
             this.success = null;
         }
 
-        /** Returns true if field success is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field success is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetSuccess() {
             return this.success != null;
         }
@@ -779,7 +789,9 @@ public class HelloWordService {
             this.qe = null;
         }
 
-        /** Returns true if field qe is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field qe is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetQe() {
             return this.qe != null;
         }
@@ -823,7 +835,9 @@ public class HelloWordService {
             throw new java.lang.IllegalStateException();
         }
 
-        /** Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
+         */
         public boolean isSet(_Fields field) {
             if (field == null) {
                 throw new java.lang.IllegalArgumentException();

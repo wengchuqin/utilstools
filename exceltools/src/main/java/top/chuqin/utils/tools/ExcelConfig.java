@@ -1,14 +1,13 @@
 package top.chuqin.utils.tools;
 
+import java.io.OutputStream;
 import java.util.List;
 
 public class ExcelConfig {
-    public static enum ExcelVersion{
-        XLS,
-        XLSX
-    }
+    private ExcelVersionEnum version;
+    private List dataList;
+    private ColumnsConfig columnsConfig;
+    private OutputStream outputStream;
 
-    public ExcelVersion version;
-    public List dataList;
 
 }

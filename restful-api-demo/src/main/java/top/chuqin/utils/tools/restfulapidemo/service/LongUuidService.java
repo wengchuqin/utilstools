@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class LongUuidService {
     private AtomicLong atomicLong = new AtomicLong(1);
 
-    public long genUuid(){
+    public long genUuid() {
         return atomicLong.incrementAndGet();
     }
 

@@ -23,9 +23,9 @@ public class OrgController {
     private OrgService orgService;
 
     @RequestMapping("/")
-    @ApiOperation(value = "创建org", httpMethod= "POST", consumes = "application/x-www-form-urlencoded")
+    @ApiOperation(value = "创建org", httpMethod = "POST", consumes = "application/x-www-form-urlencoded")
     @ApiParam(name = "name", value = "org的名字", required = true)
-    public Org addOrgByName(@NotNull @Length(min = 1, max = 10) String name){
+    public Org addOrgByName(@NotNull @Length(min = 1, max = 10) String name) {
         Org org = orgService.addOrg(name);
         return org;
     }

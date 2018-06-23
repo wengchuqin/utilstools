@@ -2,7 +2,7 @@ package top.chuqin.utils.tools.json;
 
 import java.io.Serializable;
 
-public class BasePo <T extends Serializable> {
+public class BasePo<T extends Serializable> {
     private T id;
 
     private Long updateTime;

@@ -2,7 +2,7 @@ package top.chuqin.utils.tools.restfulapidemo.exception;
 
 import java.util.NoSuchElementException;
 
-public class BusinessException extends RuntimeException{
+public class BusinessException extends RuntimeException {
     public BusinessException() {
     }
 

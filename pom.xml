@@ -21,6 +21,7 @@
         <module>thriftannotation</module>
         <module>lambda</module>
         <module>berkeley</module>
+        <module>exceltools</module>
     </modules>
 
     <dependencies>

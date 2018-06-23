@@ -1,6 +1,6 @@
 package top.chuqin.utils.tools.restfulapidemo.exception;
 
-public class NoSuchElementException extends BusinessException{
+public class NoSuchElementException extends BusinessException {
     private String resource;
     private String id;
 

@@ -39,6 +39,7 @@ public class OrgServiceTest {
         Org newOrg = orgService.updateOrg(1, newName);
         Assert.assertEquals(newOrg.getName(), newName);
     }
+
     @Test(expected = NoSuchElementException.class)
     public void updateInexistentOrg() {
         Org newOrg = orgService.updateOrg(1, "");

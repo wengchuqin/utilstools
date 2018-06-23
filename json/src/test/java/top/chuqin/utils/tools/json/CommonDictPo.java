@@ -1,6 +1,6 @@
 package top.chuqin.utils.tools.json;
 
-public class CommonDictPo extends BasePo<Long>{
+public class CommonDictPo extends BasePo<Long> {
     private String categoryCode;
     private String categoryName;
 

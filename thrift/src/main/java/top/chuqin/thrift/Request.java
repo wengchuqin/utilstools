@@ -20,17 +20,17 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
     private static final org.apache.thrift.scheme.SchemeFactory TUPLE_SCHEME_FACTORY = new RequestTupleSchemeFactory();
 
     /**
-     *
      * @see RequestType
      */
     public RequestType type; // required
     public java.lang.String name; // required
     public int age; // optional
 
-    /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
+    /**
+     * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
+     */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
         /**
-         *
          * @see RequestType
          */
         TYPE((short) 1, "type"),
@@ -151,7 +151,6 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
     }
 
     /**
-     *
      * @see RequestType
      */
     public RequestType getType() {
@@ -159,7 +158,6 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
     }
 
     /**
-     *
      * @see RequestType
      */
     public Request setType(RequestType type) {
@@ -171,7 +169,9 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
         this.type = null;
     }
 
-    /** Returns true if field type is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field type is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetType() {
         return this.type != null;
     }
@@ -195,7 +195,9 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
         this.name = null;
     }
 
-    /** Returns true if field name is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field name is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetName() {
         return this.name != null;
     }
@@ -220,7 +222,9 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
         __isset_bitfield = org.apache.thrift.EncodingUtils.clearBit(__isset_bitfield, __AGE_ISSET_ID);
     }
 
-    /** Returns true if field age is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field age is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetAge() {
         return org.apache.thrift.EncodingUtils.testBit(__isset_bitfield, __AGE_ISSET_ID);
     }
@@ -273,7 +277,9 @@ public class Request implements org.apache.thrift.TBase<Request, Request._Fields
         throw new java.lang.IllegalStateException();
     }
 
-    /** Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
+     */
     public boolean isSet(_Fields field) {
         if (field == null) {
             throw new java.lang.IllegalArgumentException();

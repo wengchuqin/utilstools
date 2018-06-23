@@ -9,14 +9,14 @@ public class Log4j2Test {
 
 
     @Test
-    public void test(){
-        while (true){
+    public void test() {
+        while (true) {
             logger.info("hello");
         }
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         logger.debug("debug");
         logger.info("info");
         logger.warn("warn");

@@ -1,6 +1,6 @@
 package top.chuqin.utils.tools.restfulapidemo.enumeration;
 
-public enum  ResourceEnum{
+public enum ResourceEnum {
     ORGS(0, "orgs"),
     EMPLOYEES(1, "employees");
 

@@ -19,22 +19,20 @@ public class OrgService {
 
 
     /**
-     *
      * @param name
      * @return
      */
     public Org addOrg(String name) {
         final MutableInt maxId = new MutableInt(0);
         StaticData.orgEmployeeMap.keySet().stream().forEach(org -> {
-            if(org.getName().equals(name)){
+            if (org.getName().equals(name)) {
                 throw new DuplicateOrgNameException(name);
             }
 
-            if(org.getId() > maxId.getValue()){
+            if (org.getId() > maxId.getValue()) {
                 maxId.setValue(org.getId());
             }
         });
-
 
 
         int newId = maxId.getValue() + 1;
@@ -51,7 +49,6 @@ public class OrgService {
         org.setName(name);
         return org;
     }
-
 
 
 }

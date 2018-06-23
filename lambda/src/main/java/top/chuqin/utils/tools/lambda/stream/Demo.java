@@ -41,7 +41,7 @@ public class Demo {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         List<String> collected = Stream.of("a", "b", "c")
                 .collect(toList());
 

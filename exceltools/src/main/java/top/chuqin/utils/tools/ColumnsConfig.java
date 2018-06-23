@@ -23,6 +23,10 @@ public class ColumnsConfig {
         return this;
     }
 
+    public TreeSet<ConfigItem> getConfigItems() {
+        return configItems;
+    }
+
     @Override
     public String toString() {
         return "ColumnsConfig{" +

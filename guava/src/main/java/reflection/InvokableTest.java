@@ -6,7 +6,7 @@ import org.springframework.util.ReflectionUtils;
 
 public class InvokableTest {
     @Test
-    public void test(){
+    public void test() {
         //修改String
         String name = "wengchuqin";
     }

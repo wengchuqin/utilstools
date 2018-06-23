@@ -1,4 +1,5 @@
 package top.chuqin.thrift.annotation.client;
+
 import com.facebook.nifty.client.FramedClientConnector;
 import com.facebook.swift.service.ThriftClientManager;
 import top.chuqin.thrift.annotation.server.HelloService;
@@ -11,7 +12,7 @@ import java.util.concurrent.ExecutionException;
 public class Client {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ThriftClientManager clientManager = new ThriftClientManager();
-        FramedClientConnector connector = new FramedClientConnector(new InetSocketAddress("localhost",9988));
+        FramedClientConnector connector = new FramedClientConnector(new InetSocketAddress("localhost", 9988));
 
         User user = new User();
         user.setName("wcq,");

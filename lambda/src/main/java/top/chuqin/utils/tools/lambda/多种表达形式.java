@@ -23,6 +23,5 @@ public class 多种表达形式 {
         BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
 
 
-
     }
 }

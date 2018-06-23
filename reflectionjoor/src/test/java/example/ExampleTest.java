@@ -1,6 +1,7 @@
 package example;
 
 import static org.joor.Reflect.*;
+
 import org.junit.Test;
 
 public class ExampleTest {

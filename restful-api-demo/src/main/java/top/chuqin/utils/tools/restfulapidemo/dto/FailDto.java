@@ -17,8 +17,6 @@ public class FailDto {
     }
 
 
-
-
     public void setCode(long code) {
         this.code = code;
     }

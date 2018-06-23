@@ -17,7 +17,7 @@
             <SizeBasedTriggeringPolicy size="1024 MB"/> 和 <DefaultRolloverStrategy max="20"/> 日志超过1024M会切块, 最多保留20个文件
          -->
         <RollingRandomAccessFile name="infoFile" fileName="${LOG_HOME}/info.log"
-                     filePattern="${LOG_HOME}/info-%d{yyyy-MM-dd}-%i.log">
+                                 filePattern="${LOG_HOME}/info-%d{yyyy-MM-dd}-%i.log">
             <!--只记录level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
             <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
@@ -28,7 +28,6 @@
             <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，这里设置了20 -->
             <DefaultRolloverStrategy max="20"/>
         </RollingRandomAccessFile>
-
 
 
         <RollingRandomAccessFile name="warnFile" fileName="${LOG_HOME}/warn.log"
